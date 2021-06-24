@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "node esbuild.develop.config.js",
-    "build": "node esbuild.production.config.js",
+    "build": "node esbuild.production.config.js"
   },
   "keywords": [],
   "author": "",
