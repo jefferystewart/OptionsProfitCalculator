@@ -1,0 +1,20 @@
+{
+  "name": "react-fintech-cyptocurrency",
+  "version": "1.0.0",
+  "description": "This a Block Explorer and Analytics Platform for Cryptocurrency",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node esbuild.develop.config.js",
+    "build": "node esbuild.production.config.js",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.12.9"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
