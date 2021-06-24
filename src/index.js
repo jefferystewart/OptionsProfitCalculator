@@ -1,3 +1,4 @@
 import * as ReactDOM from 'react-dom'
+import {App} from './App'
 
-ReactDOM.render(<h1>Hi, the best developer !!</h1>, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
