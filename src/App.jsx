@@ -1,3 +1,11 @@
+import { Header } from './components/Header'
+import { Footer } from './components/Footer'
+
 export const App = () => {
-  return (<h1>Hi, the best developer !!!!</h1>)
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  )
 }
