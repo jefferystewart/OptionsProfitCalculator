@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <nav className="navbar fixed-bottom navbar-expand-lg navbar-light bg-light rounded-pill">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light rounded-pill">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-piggy-bank-fill d-inline-block align-text-top" viewBox="0 0 16 16">
