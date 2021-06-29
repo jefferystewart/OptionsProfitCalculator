@@ -5,7 +5,11 @@ require('esbuild').serve({
 }, {
   entryPoints: ['src/index.js'],
   bundle: true,
-  loader: { '.js': 'jsx' },
+  loader: {
+    '.js': 'jsx',
+    '.png': 'dataurl',
+    '.svg': 'dataurl',
+  },
   inject: ['./react-shim.js'],
   target: ['es2020'],
   splitting: true,
