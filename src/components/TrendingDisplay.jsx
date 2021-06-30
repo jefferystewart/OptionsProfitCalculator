@@ -11,15 +11,28 @@ export const TrendingDisplay = ({endPointAPI}) => {
   
   return (
     <div className="container">
-      <div className="row row-cols-1 row-cols-md-6 g-4">
+      <div className="row row-cols-1 row-cols-md-3 g-4">
         {coins.map(({item}) => (
           <div key={item.coin_id} className="col">
-            <div className="card h-100 bg-info">
-              <img src={item.large} className="card-img-top" style={{filter: 'grayscale(100%)'}} alt={item.name} />
-              <div className="card-body">
-                <h5 className="card-title">{item.name}</h5>
-                <p className="card-text">The price is {item.price_btc}</p>
+            <div 
+              className="card h-100 border border-2 border-white rounded-3 bg-transparent fw-bolder"
+            >
+              <div class="card-header">
+                <img 
+                    src={item.thumb} 
+                    className="d-inline-block align-text-top" 
+                    width="24" 
+                    height="24" 
+                    alt={item.name} 
+                  />
+                  {' '}
+                  {item.name}
               </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent text-white">Symbol: {item.symbol}</li>
+                <li class="list-group-item bg-transparent text-white">Price BTC: {item.price_btc}</li>
+                <li class="list-group-item bg-transparent text-white">Score: {item.score}</li>
+              </ul>
             </div>
           </div>
         ))}
