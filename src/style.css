@@ -10,7 +10,7 @@ html {
   background: #00A8DB;
   font-family: 'Roboto', sans-serif;
   color: white;
-  margin: 1rem;
+  margin: 1rem 3rem 3rem 3rem;
 }
 
 a {
@@ -43,7 +43,11 @@ a {
 }
 
 .navbar {
-margin: 1rem 0;
+  padding: 1rem 0;
+  background: #00A8DB;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
 }
 
 .navbar__logo-link {
@@ -77,7 +81,7 @@ margin: 1rem 0;
 
 .card-group {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 1rem;
 }
 
@@ -109,4 +113,21 @@ margin: 1rem 0;
 
 .card__item {
   line-height: 3ch;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(auto, 75rem);
+  justify-content: center;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: 3rem;
+}
+
+.hero__text {
+  font-size: 1rem;
+  padding: 2rem;
 }
