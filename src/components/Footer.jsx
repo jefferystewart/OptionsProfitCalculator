@@ -2,14 +2,11 @@ import Logo from '../assets/logo.svg'
 
 export const Footer = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <a className="navbar-brand mx-auto" href="#">
-          RFC
-          {' '}
-          <img src={Logo} width="24" height="24" className="d-inline-block align-text-top" />
+    <nav className="navbar">
+        <a className="navbar__logo-link navbar--footer" href="#">
+          <img src={Logo} className="navbar__logo-img" />
+          <h1 className="navbar__logo-text">RFC</h1>
         </a>
-      </div>
     </nav>
   )
 }

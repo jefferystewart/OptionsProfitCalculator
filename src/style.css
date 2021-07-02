@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,14 @@
 
 html {
   background: #00A8DB;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .spinner {
@@ -32,4 +42,36 @@ html {
   }
 }
 
+.navbar {
+margin: 1rem 0;
+}
+
+.navbar__logo-link {
+  display: grid;
+  grid-auto-rows: 3rem;
+  align-items: center;
+}
+
+.navbar__logo-img {
+  width: 3rem;
+  height: 3rem;
+  justify-self: center;
+}
+
+.navbar__logo-text {
+  text-transform: uppercase;
+}
+
+.navbar--header {
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+}
+
+.navbar--footer {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 0;
+  background: rgba(255, 255, 255, .3);
+  border-radius: .5rem;
+}
 
