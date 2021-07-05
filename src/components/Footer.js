@@ -16,6 +16,7 @@ export const Footer = () => {
           className="powered__link" 
           target="_blank"
         >
+        {' '}
         @eanappi
         </a>
       </p>
