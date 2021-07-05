@@ -1,11 +1,11 @@
-import useSWR from 'swr'
-import { Spinner } from './Spinner'
+import {useTrending} from '../hooks/useTrending'
+import {Spinner} from './Spinner'
 
-export const TrendingDisplay = ({endPointAPI}) => {
-  const { data, error } = useSWR(endPointAPI)
+export const TrendingDisplay = () => {
+  const {data, isLoading, isError} = useTrending()
   
-  if (error) return <div>Failed to load</div>
-  if (!data) return <Spinner />
+  if (isLoading) return <Spinner />
+  if (isError) return <div>Failed to load</div>
   
   const coins = data.coins.filter((coin, idx) => idx < 6)
   
