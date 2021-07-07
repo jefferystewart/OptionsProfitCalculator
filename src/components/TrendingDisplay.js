@@ -1,5 +1,5 @@
-import {useTrending} from '../hooks/useTrending'
-import {Spinner} from './Spinner'
+import { useTrending } from '../hooks/useTrending'
+import { Spinner } from './Spinner'
 
 export const TrendingDisplay = () => {
   const {data, isLoading, isError} = useTrending()

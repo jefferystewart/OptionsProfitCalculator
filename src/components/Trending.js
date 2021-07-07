@@ -1,4 +1,4 @@
-import {TrendingDisplay} from './TrendingDisplay'
+import { TrendingDisplay } from './TrendingDisplay'
 
 export const Trending = () => {
   
