@@ -119,8 +119,9 @@ a {
   display: grid;
   grid-template-columns: minmax(auto, 75rem);
   justify-content: center;
-  padding: 5rem 0;
   text-align: center;
+  align-content: center;
+  margin: 2rem;
 }
 
 .hero__title {
@@ -138,20 +139,46 @@ a {
 
 .exchange {
   display: grid;
-
+  grid-template-columns: repeat(auto-fit, minmax(max(16rem, 40%), 1fr));
+  gap: 1rem;
+  margin: 2rem;
+  justify-content: center;
 }
 
 .exchange__currency,
 .exchange__crypto {
-  padding: 2ch;
+  padding: 1rem;
   background: rgba(255,255,255,.3);
   border: none;
-  border-radius: 1ch;
-  font-size: 2ch;
+  border-radius: .5rem;
+  font-size: 1rem;
   color: white;
 }
+
 .exchange__currency-option,
 .exchange__crypto-option {
   background: white;
   color: #00A8DB;
+}
+
+.exchange__button {
+  background-color: #005490;
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.exchange__result::placeholder {
+  font-size: 1rem;
+  color: white;
+}
+
+.exchange__result {
+  padding: 1rem;
+  background: rgba(255,255,255,.3);
+  border: none;
+  border-radius: .5rem;
+  font-size: 1rem;
+  color: white;
+  text-align: right;
 }
