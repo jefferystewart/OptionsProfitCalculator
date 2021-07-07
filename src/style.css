@@ -135,3 +135,23 @@ a {
 .powered {
   padding: 1rem;
 }
+
+.exchange {
+  display: grid;
+
+}
+
+.exchange__currency,
+.exchange__crypto {
+  padding: 2ch;
+  background: rgba(255,255,255,.3);
+  border: none;
+  border-radius: 1ch;
+  font-size: 2ch;
+  color: white;
+}
+.exchange__currency-option,
+.exchange__crypto-option {
+  background: white;
+  color: #00A8DB;
+}
