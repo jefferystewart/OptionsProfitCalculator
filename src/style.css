@@ -139,7 +139,10 @@ a {
 
 .exchange {
   display: grid;
+/*
   grid-template-columns: repeat(auto-fit, minmax(max(16rem, 40%), 1fr));
+*/
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 1rem;
   margin: 2rem;
   justify-content: center;
