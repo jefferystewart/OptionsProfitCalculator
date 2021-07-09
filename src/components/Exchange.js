@@ -23,7 +23,7 @@ export const Exchange = () => {
   }
   
   if (isLoading) return <Spinner />
-
+  
   return (
     <div className="exchange">
       <select 
@@ -35,7 +35,7 @@ export const Exchange = () => {
           className="exchange__crypto-option" 
           value=""
         >
-          Choose a value
+          Choose a coin
         </option>
         {data.coins.map(coin => (
           <option 
@@ -56,7 +56,7 @@ export const Exchange = () => {
           className="exchange__currency-option" 
           value=""
         >
-          Choose a value
+          Choose a coin
         </option>
         {SupportedVsCurrencies.map(currency => (
           <option 
