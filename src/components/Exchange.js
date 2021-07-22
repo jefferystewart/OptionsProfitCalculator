@@ -58,13 +58,13 @@ export const Exchange = () => {
         >
           Choose a coin
         </option>
-        {SupportedVsCurrencies.map(currency => (
+        {Object.entries(SupportedVsCurrencies).map(currency => (
           <option 
-            key={currency} 
+            key={currency[1]} 
             className="exchange__currency-option" 
-            value={currency}
+            value={currency[1]}
           >
-            {currency}
+            {currency[0]}
           </option>
         ))}
       </select>
